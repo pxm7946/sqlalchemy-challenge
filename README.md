@@ -1,1 +1,9 @@
 # sqlalchemy-challenge
+
+Object Relational Mapping, also known as ORM, is another library in Python that can be accessed through SQLAlchemy. Climate analysis was done using this tool, as well as other skills that have been previously shown. Pandas and Matplotlib were also utilized as part of this analysis, which is shown towards the end of the coding file. 
+
+In order to begin the analysis, an engine had to be created to the sqlite file named "hawaii.sqlite". The classes that were found, and will be used throughout the rest of this porject, are "measurement" and "station". A query had to be created in order to collect the data from the past 12 months from the most recent date and later plot them, using the Matplotlib library. Based on the graph, we can see that early September and late April are the dates where precipitation is the highest, landing at about 6.2-6.8 inches. Pandas was later used to print the summary statistics for the precipitation data.
+
+Once the graph was designed from the information derived from the "measurements" class, we took a closer look at the "station" class. A query was created the find the stations that have the most rows, and later formatted in a descending order so that the data could be more organized. The ".min", ".max", ".avg", and ".count"  functions were used in order to find the basic data for the stations. The station that had the most rows was then identified, and was combined with the temperature information from only this station over the past 12 months. This is seen as Temperature Observation Data, also known as TOBS. A histogram was created to visually analyze this finding. We can the conclude that the temperature landed at 75ºF for a total of 65 times, causing it to be the highest amount of times that a temperature has been recorded for this station. The session was closed out once the analysis was done. 
+
+The coding for these steps can be found in the "climate_analysis.ipynb" file.
